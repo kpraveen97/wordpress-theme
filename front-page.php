@@ -16,54 +16,15 @@ get_header();
 ?>
 
 <body>
-    <header class="header-main">
-        <nav id="nav" class="main-navigation">
-            <div class="site-logo">
-                <a href="#">kp97<span>.</span></a>
-            </div>
-            <div class="toggle_btn">
-                <button class="btn">
-                    <i class="fa fa-bars"></i>
-                </button>
-            </div>
-            <div class="collapse flex_grow">
-                <ul class="flex-center">
-                    <li>
-                        <a href="#">website</a>
-                    </li>
-                    <li>
-                        <a href="#">app</a>
-                    </li>
-                    <li>
-                        <a href="#">ui/ux design</a>
-                    </li>
-                    <li>
-                        <a href="#">works</a>
-                    </li>
-                    <li>
-                        <a href="#">pricing</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="flex-inital">
-                <ul style="display: flex;">
-                    <button class="theme_btn">Tell us about your project</button>
-                </ul>
-            </div>
-
-        </nav>
-    </header>
-
     <main>
         <section class="wp-theme-banner">
             <div class="container text-center">
                 <div class="banner-slider">
                     <div class="slider-items">
                         <div class="slider-item animate__animated animate__bounce">
-                            <h1>Beautifully Crafted Websites & Apps
-                            </h1>
-                            <p>Get your website design prototypes and mockups converted into pixel perfect, responsive,
-                                and hand coded websites with us.</p>
+                            <h1>Beautifully Crafted Websites & Apps</h1>
+                            <p>Get your website design prototypes and mockups converted into pixel perfect, responsive, and hand coded websites with us.</p>
+                            <p>Technologies used are React/HTML/WordPress</p>
                             <div class="slider_btn">
                                 <a href="#" target="_blank" title="Visit Site">Tell us about your project</a>
                             </div>
