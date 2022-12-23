@@ -1,21 +1,21 @@
-/*!
-Theme Name: kp97.
-Theme URI: http://underscores.me/
-Author: Underscores.me
-Author URI: http://underscores.me/
-Description: Description
+/*
+Theme Name: kp97
+Theme URI: https://wp-themes.com/
+Author: K Praveen Kumar
+Author URI: https://github.com/kpraveen97
+Description: kp97 is a powerful,fast, fully customizable & beautiful WordPress theme suitable for any event, blog, portfolio, business website and WooCommerce storefront. A theme compatible with WP Event Manager plugin. Also, It offers special features and templates so it works perfectly with all page builders like Elementor, Visual Composer, Beaver Builder, SiteOrigin, Divi, etc. Some of the other features: # Responsive # RTL #Translation Ready #SEO Friendly # WooCommerce Ready # Extendible with WP Event Manager addons # Regularly updated # Designed, Developed, Maintained & Supported by WP Event Manager’s dedicated team. Looking for a perfect base theme for kp97? Look no further. You can use an kp97 theme for building any kind of event website!
 Version: 1.0.0
-Tested up to: 5.4
-Requires PHP: 5.6
 License: GNU General Public License v2 or later
-License URI: LICENSE
-Text Domain: kp97
-Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
-
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: wp-theme
+Domain Path: /languages
+Tested up to: 5.8.2
+Requires PHP: 5.2
+Tags:  entertainment, portfolio, e-commerce, one-column, two-columns, full-width-template, left-sidebar, right-sidebar, editor-style, custom-header, custom-background, custom-logo, custom-menu, custom-colors, rtl-language-support, featured-images, threaded-comments, translation-ready, sticky-post, microformats,theme-options
 This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned.
+Use it to make something cool, have fun, and share what you've learned with others.
 
-kp97. is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
+kp97 is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 Normalizing styles have been helped along thanks to the fine work of
@@ -967,3 +967,921 @@ textarea {
 	margin-right: auto;
 	margin-bottom: 1.5em;
 }
+
+
+/* Theme starts here  */
+
+/* Global Variables */
+:root {
+    --wp-theme-primary-color: #1877F2 !important;
+    --wp-theme-secondary-color: #000;
+    --wp-theme-light-color: #F6FAF0;
+    --wp-theme-dark-color: #000;
+    --wp-theme-button-color1: #1877F2;
+    --wp-theme-button-color2: #111;
+    --wp-theme-gradient: linear-gradient(90deg, var(--wp-theme-button-color1), var(--wp-theme-button-color2));
+    --wp-theme-gradient-hover: linear-gradient(260deg, var(--wp-theme-button-color1), var(--wp-theme-button-color2));
+    --box-shadow: 0 10px 40px rgb(0 0 0 / 5%);
+}
+
+body {
+    background-color: #fff;
+}
+
+.overlay-light {
+    background-color: #f5f5f5;
+}
+
+.slider_btn {
+    margin-top: 40px;
+}
+
+.slider_btn a {
+    border: 3px solid;
+    padding: 12px 35px;
+    background: transparent;
+    color: #000;
+    text-transform: uppercase;
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.theme_btn {
+    background: var(--wp-theme-button-color1);
+    border: 0;
+    color: #fff;
+    font-weight: 600;
+    padding: 18px 36px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s 0s;
+    position: relative;
+}
+
+.theme_btn:before {
+    content: "";
+    position: absolute;
+    left: -10px;
+    top: -10px;
+    width: 40px;
+    height: 40px;
+    border-top: 5px solid var(--wp-theme-button-color1);
+    border-left: 5px solid var(--wp-theme-button-color1);
+    transition: all 0.3s;
+}
+
+.theme_btn:after {
+    content: "";
+    position: absolute;
+    right: -10px;
+    bottom: -10px;
+    width: 40px;
+    height: 40px;
+    border-right: 5px solid var(--wp-theme-button-color1);
+    border-bottom: 5px solid var(--wp-theme-button-color1);
+    transition: all 0.3s;
+}
+
+.theme_btn:hover:before {
+    width: 100%;
+    height: 100%;
+    border-color: #000;
+}
+
+.theme_btn:hover:after {
+    width: 100%;
+    height: 100%;
+    border-color: #000;
+}
+
+.theme_btn:hover {
+    background: var(--wp-theme-button-color2);
+    color: #fff;
+}
+
+section {
+    padding: 80px 0;
+}
+
+.wp-theme-section-title {
+    margin-bottom: 60px;
+}
+
+.wp-theme-section-title h3 {
+    font-size: calc(1.3rem + 1vw);
+    display: block;
+    margin: 0;
+    line-height: normal;
+}
+
+.wp-theme-section-title h5 {
+    font-size: calc(1.3rem + 1vw);
+    display: block;
+    margin: 0;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.wp-theme-section-title p {
+    max-width: 600px;
+    width: 100%;
+    margin: 20px auto auto auto;
+}
+
+.slider-item p {
+    max-width: 600px;
+    margin: 30px auto;
+}
+
+.slider-item h1 {
+    color: #000;
+    font-size: calc(1.2rem + 2vw);
+}
+
+p {
+    font-weight: 400;
+    color: #000;
+}
+
+.pt-0 {
+    padding-top: 0;
+}
+
+.pb-0 {
+    padding-bottom: 0;
+}
+
+.ml-8 {
+    margin-left: 80px;
+}
+
+
+
+.play-btn {
+    background: var(--wp-theme-primary-color);
+    border-radius: 50%;
+    animation: animatewa 2s linear infinite;
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.play-btn.whatsapp-green {
+    background: #25D366;
+}
+
+.play-btn i {
+    color: var(--wp-theme-secondary-color);
+    font-size: 22px;
+}
+
+@keyframes animate {
+    0% {
+        box-shadow: 0 0 0 0 rgba(var(--wp-theme-primary-color), 0.5);
+    }
+
+    50% {
+        box-shadow: 0 0 0 15px var(--wp-theme-primary-color);
+    }
+
+    100% {
+        box-shadow: 0 0 0 rgba(var(--wp-theme-primary-color), 0.5);
+    }
+}
+
+@keyframes animatewa {
+    0% {
+        box-shadow: 0 0 0 0 rgba(#25D366, 0.5);
+    }
+
+    50% {
+        box-shadow: 0 0 0 15px #25D366;
+    }
+
+    100% {
+        box-shadow: 0 0 0 rgba(#25D366, 0.5);
+    }
+}
+
+
+::selection {
+    background: var(--wp-theme-primary-color);
+    color: #fff;
+}
+
+/* image scroll hover  */
+
+/* Design Starts  */
+
+.main-menu-container {
+    margin-right: 60px;
+}
+
+.logo-footer h2 {
+    position: relative;
+    overflow: hidden;
+}
+
+.logo-footer h2:before {
+    content: "kp97";
+    color: var(--wp-theme-primary-color);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-right: 4px solid var(--wp-theme-primary-color);
+    animation: slide 3s linear infinite;
+    overflow: hidden;
+}
+
+@keyframes slide {
+    0% {
+        width: 0;
+    }
+
+    50% {
+        width: 100%;
+    }
+
+    100% {
+        width: 0;
+    }
+}
+
+.site-logo a {
+    font-size: calc(1.2rem + 1.2vw);
+    line-height: normal;
+    font-weight: bold;
+    font-family: 'poppins';
+    letter-spacing: 1px;
+}
+
+.site-logo span {
+    color: var(--wp-theme-primary-color);
+}
+
+.logo-item:hover img {
+    transform: scale(1.2);
+}
+
+.banner-title h2 {
+    font-size: 50px;
+    line-height: 60px;
+    margin-bottom: 20px;
+}
+
+.banner-title p {
+    font-size: 20px;
+}
+
+.banner-title {
+    margin-bottom: 30px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.social-icons li:hover a {
+    transform: scale(1.2);
+}
+
+.social-icons li {
+    margin-right: 30px;
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+    position: relative;
+}
+
+.lets-connect h2 {
+    font-size: 30px;
+}
+
+.services-item {
+    box-shadow: var(--box-shadow);
+    padding: 3rem;
+    border-radius: 1.5rem;
+}
+
+.services-item i {
+    width: 60px;
+    height: 60px;
+    background-color: #f2f3f4;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.demo-item {
+    height: 420px;
+    overflow: hidden;
+}
+
+.banner-slider {
+    margin-top: 2rem;
+}
+
+.wp-theme-footer-main {
+    padding: 80px 0;
+    background: #000;
+    color: white;
+}
+
+.wp-theme-footer-main ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    opacity: 0.7;
+}
+
+.footer-col-links ul {
+    flex-direction: column;
+}
+
+.footer-links li a {
+    font-size: 24px;
+    margin-right: 24px;
+}
+
+.copyright p {
+    color: white;
+    opacity: 0.7;
+}
+
+.whatsapp-floating {
+    position: fixed;
+    right: 20px;
+    bottom: 0;
+}
+
+.play-btn i {
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.agency-theme-demo img,
+.demo-item img {
+    height: 420px;
+    width: 100%;
+    object-fit: cover;
+    box-shadow: var(--box-shadow);
+}
+
+.agency-theme-demo {
+    margin-bottom: 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+.wp-theme-banner,
+.wp-theme-services-section,
+.lets-connect {
+    background: #f2f3f477;
+}
+
+.wp-theme-banner {
+    padding: 120px 0;
+    animation: changebg 10s linear infinite;
+    color: white;
+}
+
+@keyframes changebg {
+    0% {
+        background-color: #1877F2;
+    }
+
+    20% {
+        background-color: red;
+    }
+
+    40% {
+        background-color: yellow;
+    }
+
+    60% {
+        background-color: blue;
+    }
+
+    80% {
+        background-color: purple;
+    }
+
+    100% {
+        background-color: #1877F2;
+    }
+
+}
+
+.nav-btn {
+    position: relative;
+    background-color: var(--wp-theme-button-color1);
+    color: #fff;
+    font-weight: 600;
+    padding: 18px 36px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s 0s;
+    overflow: hidden;
+    z-index: 1;
+    animation: changebg 10s linear infinite;
+}
+
+.nav-btn:hover {
+    box-shadow: var(--box-shadow);
+}
+
+.nav-btn:hover .wave {
+    top: 0;
+}
+
+.nav-btn:hover {
+    color: white;
+}
+
+@keyframes wavy {
+    0% {
+        background-position-x: 0;
+    }
+
+    100% {
+        background-position-x: 122px;
+    }
+}
+
+.footer-bottom {
+    margin-top: 50px;
+    color: white;
+}
+
+.footer-bottom p {
+    color: white;
+    opacity: 0.7;
+}
+
+.footer-bottom a {
+    color: var(--wp-theme-button-color1);
+    margin-left: 10px;
+}
+
+/*campaigns start*/
+.wpem_charity_theme-campaigns-box img {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.wpem_charity_theme-campaigns-box {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wpem_charity_theme-campaigns-box-content {
+    position: absolute;
+    bottom: -80px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 30px;
+    color: #fff;
+    transition: all 0.3s 0s;
+    line-height: normal;
+    z-index: 1;
+}
+
+.wpem_charity_theme-campaigns-box-content h4 {
+    font-size: 24px;
+    line-height: normal;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.wpem_charity_theme-progress {
+    height: 10px;
+    background-color: rgb(255 255 255 / 20%);
+    position: relative;
+    border-radius: 50px;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.wpem_charity_theme-progress-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: var(--wpem-theme-gradient);
+}
+
+.wpem_charity_theme-progress-label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.wpem_charity_theme-campaigns-box-content .theme_btn {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.wpem_charity_theme-campaigns-box:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(transparent, rgb(0 0 0 / 70%));
+}
+
+.wpem_charity_theme-campaigns-box:hover .wpem_charity_theme-campaigns-box-content {
+    bottom: 0;
+}
+
+.wpem_charity_theme-campaigns-box:hover .theme_btn {
+    opacity: 1;
+    visibility: visible;
+}
+
+.wpem_charity_theme-campaigns .column-4:nth-child(2) .wpem_charity_theme-campaigns-box img {
+    height: 300px;
+}
+
+.wpem_charity_theme-campaigns .column-4:nth-child(2) .wpem_charity_theme-campaigns-box:nth-child(1) {
+    margin-bottom: 30px;
+}
+
+.lightning_text li:first-child {
+    padding-left: 0;
+}
+
+/* animated loading divs start  */
+.main_loading {
+    width: 100%;
+    height: 600px;
+    position: relative;
+    background: #f2f3f4;
+    display: grid;
+    place-items: center;
+}
+
+.center_loading {
+    width: 400px;
+    height: 400px;
+    background: transparent;
+    position: relative;
+}
+
+.center_loading span {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    background: var(--wp-theme-button-color1);
+    color: #fff;
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    top: 0;
+    animation: load 2s linear infinite;
+    transition: all 0.3s;
+}
+
+.center_loading span:nth-child(2) {
+    animation-delay: 0.67s;
+}
+
+.center_loading span:nth-child(3) {
+    animation-delay: 1.32s;
+}
+
+@keyframes load {
+    0% {
+        left: 0;
+        top: 0;
+    }
+
+    12.5% {
+        left: 50%;
+        top: 0;
+    }
+
+    25% {
+        left: 50%;
+        top: 0;
+    }
+
+    37.5% {
+        left: 50%;
+        top: 50%;
+    }
+
+    50% {
+        left: 50%;
+        top: 50%;
+    }
+
+    62.5% {
+        left: 0;
+        top: 50%;
+    }
+
+    75% {
+        left: 0;
+        top: 50%;
+    }
+
+    87.5% {
+        left: 0;
+        top: 0;
+    }
+
+    100% {
+        left: 0;
+        top: 0;
+    }
+}
+
+/* animated loading divs end  */
+
+
+.captions {
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.agency-theme-demo:hover img {
+    transform: scale(1.4) rotate(15deg);
+}
+
+.agency-theme-demo:hover .captions {
+    opacity: 1;
+}
+
+.captions h4 {
+    font-size: 24px;
+    margin-top: 250px;
+    transition: all 0.5s;
+}
+
+.agency-theme-demo:hover .captions h4 {
+    margin-top: 0;
+}
+
+/* wave animation */
+.wave {
+    width: 10px;
+    height: 60px;
+    background-color: #fff;
+    display: grid;
+    place-items: center;
+    margin: 0 4px;
+    border-radius: 6px;
+    animation: waves 1s linear infinite;
+    transform-origin: bottom;
+    transition: all 0.3s;
+}
+
+.wave_loading_effect h2 {
+    color: white;
+    margin-right: 80px;
+}
+
+@keyframes waves {
+    0% {
+        transform: scale(0);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0);
+    }
+}
+
+.wave:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.wave:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+.wave:nth-child(4) {
+    animation-delay: 0.3s;
+}
+
+.wave:nth-child(5) {
+    animation-delay: 0.4s;
+}
+
+.wave:nth-child(6) {
+    animation-delay: 0.5s;
+}
+
+.wave:nth-child(7) {
+    animation-delay: 0.6s;
+}
+
+.wave:nth-child(8) {
+    animation-delay: 0.7s;
+}
+
+.wave:nth-child(9) {
+    animation-delay: 0.8s;
+}
+
+/* hidden search starts  */
+.searchBox {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchText {
+    width: 0;
+    padding: 0 !important;
+    transition: all 0.3s;
+    height: 50px;
+    outline: none;
+    border: none;
+}
+
+.searchBox:hover .searchText {
+    width: 250px;
+    padding: 25px 20px !important;
+}
+
+.searchBox:hover .searchBtn {
+    right: 30px;
+}
+
+.searchBtn {
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    background-color: var(--wp-theme-primary-color);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: calc(100% - 30px);
+    transition: all 0.3s;
+}
+
+/* hidden search ends  */
+
+/* hover cards starts  */
+.hover_card {
+    width: 350px;
+    min-width: 200px;
+    height: 400px;
+    background: #f2f3f4;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+}
+
+.card_content {
+    padding: 0 20px;
+    position: absolute;
+}
+
+.card_number {
+    position: absolute;
+    background: var(--wp-theme-primary-color);
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    transition: all 0.5s linear;
+    opacity: 0.9;
+    border-radius: 20px;
+}
+
+.card_number h2 {
+    font-size: 60px;
+}
+
+.hover_card {
+    border-radius: 20px;
+}
+
+.hover_card:hover .card_number h2 {
+    font-size: 20px;
+}
+
+.hover_card:hover .card_number {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    border: 2px dotted var(--wp-theme-primary-color);
+    color: white;
+    font-size: 20px;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* hover cards ends  */
+
+/* contact form starts  */
+.contact_form_container {
+    width: 400px;
+    margin: auto;
+    padding: 50px;
+    background: var(--wp-theme-primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 10px;
+}
+
+.inputBox {
+    position: relative;
+}
+
+.inputBox input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: #fff;
+    border: none;
+    border-bottom: 2px solid #fff;
+    border-radius: 0;
+    background: transparent;
+    outline: none;
+}
+
+.inputBox label {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    font-size: 16px;
+    transition: all 0.5s;
+}
+
+.inputBox input:focus~label,
+.inputBox input:valid~label {
+    top: -20px;
+    left: 0;
+    color: white;
+    font-size: 14px;
+}
+
+.contact_form_container input[type="submit"] {
+    background: transparent;
+    outline: none;
+    color: #fff;
+    padding: 8px 24px;
+    font-size: 14px;
+    border: 3px solid;
+    border-radius: 6px;
+}
+
+/* contact form ends  */
